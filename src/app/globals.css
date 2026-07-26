@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 248 249 247;
+    --foreground: 16 42 67;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+    max-width: 100vw;
+    overflow-x: hidden;
+    /* Respect user text scaling */
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: #F8F9F7;
+    color: #102A43;
+    font-family: var(--font-inter), sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    selection-background-color: #B76E41;
+    selection-color: #FFFFFF;
+  }
+
+  /* Prevent iOS automatic input zooming by ensuring font-size is at least 16px (text-base) on mobile */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  @media (min-width: 640px) {
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      font-size: 0.875rem !important; /* 14px text-sm on desktop */
+    }
+  }
+
+  /* Focus styling for WCAG AA Accessibility */
+  *:focus-visible {
+    outline: 2px solid #B76E41;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+  border: 1px solid #E2E8F0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B76E41;
+}
+
+/* Safe Area Inset Helper Classes */
+.pb-safe {
+  padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+}
+
+.bottom-safe {
+  bottom: max(1.5rem, env(safe-area-inset-bottom));
+}
+
+/* Architectural Panel Utilities */
+.panel-architectural {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 10px 30px -10px rgba(16, 42, 67, 0.06);
+}
+
+.panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.panel-hover:hover {
+  background: #FFFFFF;
+  border-color: #CBD5E1;
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -12px rgba(16, 42, 67, 0.12);
+}
+
+/* Touch Target Minimum Helper */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Fluid Heading Utilities */
+.h1-fluid {
+  font-size: clamp(2.125rem, 5.5vw, 3.75rem);
+  line-height: 1.15;
+}
+
+.h2-fluid {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+/* Prevent unwanted word breaks on normal headings while allowing safe wraps on long postcodes/emails */
+.break-words-safe {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
