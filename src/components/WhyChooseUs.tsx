@@ -43,17 +43,17 @@ export default function WhyChooseUs() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {pillars.map((pillar, idx) => (
             <div
               key={idx}
-              className="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-soft hover:shadow-elevated transition-all duration-300 relative group overflow-hidden flex items-center gap-4"
+              className="p-4 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-soft hover:shadow-elevated transition-all duration-300 relative group overflow-hidden flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 min-h-[90px] sm:min-h-[100px]"
             >
-              <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 w-fit flex-shrink-0 shadow-xs">
+              <div className="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-200 w-fit flex-shrink-0 shadow-xs">
                 {pillar.icon}
               </div>
 
-              <h3 className="text-lg sm:text-xl font-bold text-brand-deepNavy font-display group-hover:text-brand-copper transition-colors">
+              <h3 className="text-xs sm:text-lg font-bold text-brand-deepNavy font-display group-hover:text-brand-copper transition-colors leading-snug">
                 {pillar.title}
               </h3>
             </div>

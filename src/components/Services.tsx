@@ -58,7 +58,7 @@ export default function Services({ onOpenQuoteModal }: ServicesProps) {
         </div>
 
         {/* Responsive Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {primaryServices.map((service) => (
             <div
               key={service.id}
@@ -66,7 +66,7 @@ export default function Services({ onOpenQuoteModal }: ServicesProps) {
               className="group relative rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-soft hover:shadow-elevated transition-all duration-300 cursor-pointer flex flex-col justify-between"
             >
               {/* Top Image Frame */}
-              <div className="relative h-44 sm:h-52 w-full overflow-hidden bg-slate-100">
+              <div className="relative h-36 sm:h-52 w-full overflow-hidden bg-slate-100">
                 <Image
                   src={getServiceImage(service.id)}
                   alt={service.title}
@@ -74,24 +74,21 @@ export default function Services({ onOpenQuoteModal }: ServicesProps) {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-deepNavy/60 via-transparent to-transparent" />
-                <span className="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-brand-deepNavy text-[10px] font-mono font-bold px-2.5 py-1 rounded border border-slate-200 uppercase tracking-widest">
-                  Professional
-                </span>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-deepNavy/50 via-transparent to-transparent" />
               </div>
 
               {/* Card Content */}
-              <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+              <div className="p-4 sm:p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-base sm:text-lg font-bold text-brand-deepNavy font-display group-hover:text-brand-copper transition-colors mb-2">
+                  <h3 className="text-base sm:text-lg font-bold text-brand-deepNavy font-display group-hover:text-brand-copper transition-colors mb-1.5 sm:mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-brand-slate leading-relaxed mb-6">
+                  <p className="text-xs sm:text-sm text-brand-slate leading-relaxed mb-4 sm:mb-6">
                     {service.shortDesc}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-copper group-hover:text-brand-copperDark min-h-[44px]">
+                <div className="pt-3 sm:pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-copper group-hover:text-brand-copperDark min-h-[40px]">
                   <span>Learn More</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>

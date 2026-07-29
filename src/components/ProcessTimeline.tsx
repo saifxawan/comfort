@@ -47,32 +47,32 @@ export default function ProcessTimeline() {
         </div>
 
         {/* Process Timeline Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 relative">
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="relative p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-soft hover:shadow-elevated transition-all duration-300 group flex flex-col justify-between"
+              className="relative p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-soft hover:shadow-elevated transition-all duration-300 group flex flex-col justify-between"
             >
               {/* Step Number & Icon */}
-              <div className="flex items-center justify-between mb-5 sm:mb-6">
-                <span className="text-2xl sm:text-3xl font-extrabold font-mono text-brand-copper/50 group-hover:text-brand-copper transition-colors">
+              <div className="flex items-center justify-between mb-3 sm:mb-4">
+                <span className="text-xl sm:text-2xl font-extrabold font-mono text-brand-copper/50 group-hover:text-brand-copper transition-colors">
                   {step.num}
                 </span>
-                <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 group-hover:scale-105 transition-transform shadow-xs">
+                <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200 group-hover:scale-105 transition-transform shadow-xs">
                   {step.icon}
                 </div>
               </div>
 
               <div>
-                <h3 className="text-base sm:text-lg font-bold text-brand-deepNavy font-display mb-2 group-hover:text-brand-copper transition-colors">
+                <h3 className="text-base font-bold text-brand-deepNavy font-display mb-1.5 group-hover:text-brand-copper transition-colors">
                   {step.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-brand-slate leading-relaxed font-normal">
+                <p className="text-xs text-brand-slate leading-relaxed font-normal">
                   {step.desc}
                 </p>
               </div>
 
-              <div className="mt-5 sm:mt-6 pt-4 border-t border-slate-100 flex items-center text-[10px] font-mono text-slate-400 uppercase tracking-wider font-semibold">
+              <div className="mt-4 pt-3 border-t border-slate-100 flex items-center text-[10px] font-mono text-slate-400 uppercase tracking-wider font-semibold">
                 <span>STEP {idx + 1} OF 4</span>
               </div>
             </div>

@@ -59,25 +59,25 @@ export default function Testimonials() {
         </div>
 
         {/* Responsive Testimonial Card */}
-        <div className="relative p-6 sm:p-10 lg:p-12 rounded-3xl bg-white border border-slate-200 shadow-elevated">
-          <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
+        <div className="relative p-5 sm:p-10 lg:p-12 rounded-3xl bg-white border border-slate-200 shadow-elevated">
+          <div className="flex flex-wrap items-center justify-between gap-3 mb-4 sm:mb-6">
             <div className="flex items-center gap-1">
               {[...Array(activeReview.rating)].map((_, i) => (
                 <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-amber-400 text-amber-400" />
               ))}
             </div>
 
-            <span className="text-[11px] sm:text-xs font-mono text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full flex items-center gap-1.5 font-semibold">
+            <span className="text-[10px] sm:text-xs font-mono text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full flex items-center gap-1.5 font-semibold">
               <ShieldCheck className="w-3.5 h-3.5 flex-shrink-0" />
               <span>{activeReview.source}</span>
             </span>
           </div>
 
-          <p className="text-sm sm:text-lg lg:text-xl text-brand-deepNavy font-normal leading-relaxed italic mb-8">
+          <p className="text-sm sm:text-lg lg:text-xl text-brand-deepNavy font-normal leading-relaxed italic mb-6 sm:mb-8">
             &ldquo;{activeReview.text}&rdquo;
           </p>
 
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-6 border-t border-slate-100">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 sm:pt-6 border-t border-slate-100">
             <div>
               <h4 className="text-sm font-bold text-brand-deepNavy font-display">{activeReview.name}</h4>
               <p className="text-xs text-brand-slate mt-0.5">{activeReview.role}</p>

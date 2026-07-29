@@ -53,13 +53,13 @@ export default function ProjectsGallery() {
         </div>
 
         {/* Responsive Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
           {projects.map((proj, idx) => (
             <div
               key={idx}
               className="group relative rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-soft hover:shadow-elevated transition-all duration-300 flex flex-col"
             >
-              <div className="relative h-52 sm:h-72 w-full overflow-hidden bg-slate-100">
+              <div className="relative h-40 sm:h-72 w-full overflow-hidden bg-slate-100">
                 <Image
                   src={proj.image}
                   alt={proj.title}
@@ -68,14 +68,14 @@ export default function ProjectsGallery() {
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-deepNavy/70 via-transparent to-transparent" />
-                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded border border-slate-200 text-[10px] font-mono font-bold text-brand-copper uppercase tracking-wider max-w-[85%] truncate">
+                <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded border border-slate-200 text-[10px] font-mono font-bold text-brand-copper uppercase tracking-wider max-w-[85%] truncate">
                   {proj.category}
                 </div>
               </div>
 
-              <div className="p-5 sm:p-6">
-                <div className="text-[11px] sm:text-xs font-mono text-slate-500 uppercase tracking-wider mb-1">{proj.location}</div>
-                <h3 className="text-lg sm:text-xl font-bold text-brand-deepNavy font-display mb-2">{proj.title}</h3>
+              <div className="p-4 sm:p-6">
+                <div className="text-[10px] sm:text-xs font-mono text-slate-500 uppercase tracking-wider mb-1">{proj.location}</div>
+                <h3 className="text-base sm:text-xl font-bold text-brand-deepNavy font-display mb-1.5 sm:mb-2">{proj.title}</h3>
                 <p className="text-xs sm:text-sm text-brand-slate leading-relaxed font-normal">{proj.desc}</p>
               </div>
             </div>
