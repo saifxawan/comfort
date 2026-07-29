@@ -86,13 +86,13 @@ export default function QuoteForm({ initialService = "", onSuccess }: QuoteFormP
       <div className="mb-6 sm:mb-8">
         <div className="flex items-center gap-2 text-xs font-mono text-brand-copper font-semibold uppercase tracking-widest mb-2">
           <ShieldCheck className="w-4 h-4 text-brand-copper flex-shrink-0" />
-          <span>FREE NO-OBLIGATION ESTIMATE</span>
+          <span>Free Quote</span>
         </div>
         <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-brand-deepNavy font-display">
-          REQUEST A <span className="text-brand-copper">FAST QUOTE</span>
+          Get a <span className="text-brand-copper">Free Quote</span>
         </h3>
         <p className="text-xs sm:text-sm text-brand-slate mt-1.5">
-          Complete the form below. Our engineering team will review your specifications and respond promptly.
+          Fill in your details below and we&apos;ll get back to you with a free quote.
         </p>
       </div>
 
@@ -101,15 +101,15 @@ export default function QuoteForm({ initialService = "", onSuccess }: QuoteFormP
           <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
             <CheckCircle2 className="w-7 h-7 sm:w-8 sm:h-8" />
           </div>
-          <h4 className="text-lg sm:text-xl font-bold text-brand-deepNavy font-display">QUOTE REQUEST RECEIVED</h4>
+          <h4 className="text-lg sm:text-xl font-bold text-brand-deepNavy font-display">Quote Request Received</h4>
           <p className="text-xs sm:text-sm text-slate-700 max-w-md mx-auto leading-relaxed">
-            Thank you for contacting Comfort Heating and Plumbing Ltd. A member of our team will call or email you shortly.
+            Thank you for contacting Comfort Heating and Plumbing Ltd. We will get back to you shortly.
           </p>
           <button
             onClick={() => setStatus("idle")}
             className="px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-white bg-emerald-600 hover:bg-emerald-700 shadow-md min-h-[44px]"
           >
-            Submit Another Enquiry
+            Send Another Enquiry
           </button>
         </div>
       ) : (
@@ -182,7 +182,7 @@ export default function QuoteForm({ initialService = "", onSuccess }: QuoteFormP
             {/* UK Postcode */}
             <div>
               <label htmlFor="postcode" className="block text-[11px] sm:text-xs font-semibold text-brand-slate uppercase tracking-wider mb-1.5">
-                UK Postcode *
+                Postcode *
               </label>
               <input
                 type="text"
@@ -210,23 +210,22 @@ export default function QuoteForm({ initialService = "", onSuccess }: QuoteFormP
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-brand-deepNavy text-base sm:text-sm focus:border-brand-copper focus:ring-1 focus:ring-brand-copper focus:outline-none min-h-[48px]"
               >
-                <option value="Heating & Central Heating">Heating & Central Heating</option>
-                <option value="Boiler Replacement / Upgrade">Boiler Replacement / Upgrade</option>
-                <option value="Gas Services & Safety">Gas Services & Safety</option>
-                <option value="Plumbing Installation / Repair">Plumbing Installation / Repair</option>
-                <option value="Hot Water Systems">Hot Water Systems</option>
+                <option value="Boiler Installation">Boiler Installation</option>
+                <option value="Boiler Repairs">Boiler Repairs</option>
+                <option value="Plumbing">Plumbing Repairs & Services</option>
+                <option value="Gas Services">Gas Services</option>
+                <option value="Bathrooms">Bathroom Plumbing</option>
                 <option value="Underfloor Heating">Underfloor Heating</option>
-                <option value="Bathroom Plumbing">Bathroom Plumbing</option>
-                <option value="Kitchen & Utility Plumbing">Kitchen & Utility Plumbing</option>
-                <option value="Leak Detection & Repair">Leak Detection & Repair</option>
-                <option value="Other Service">Other Custom Enquiry</option>
+                <option value="Hot Water Systems">Hot Water Systems</option>
+                <option value="Emergency Repairs">Emergency Repairs</option>
+                <option value="Other Service">Other Enquiry</option>
               </select>
             </div>
 
             {/* Property Category */}
             <div>
               <label htmlFor="propertyType" className="block text-[11px] sm:text-xs font-semibold text-brand-slate uppercase tracking-wider mb-1.5">
-                Property Category *
+                Property Type *
               </label>
               <select
                 id="propertyType"
@@ -235,9 +234,9 @@ export default function QuoteForm({ initialService = "", onSuccess }: QuoteFormP
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-brand-deepNavy text-base sm:text-sm focus:border-brand-copper focus:ring-1 focus:ring-brand-copper focus:outline-none min-h-[48px]"
               >
-                <option value="Domestic">Domestic Residential</option>
-                <option value="Commercial">Commercial / Office</option>
-                <option value="Landlord / Letting">Landlord / Letting Property</option>
+                <option value="Domestic">Home / Domestic</option>
+                <option value="Commercial">Business / Commercial</option>
+                <option value="Landlord / Letting">Landlord / Rental Property</option>
               </select>
             </div>
           </div>
@@ -245,7 +244,7 @@ export default function QuoteForm({ initialService = "", onSuccess }: QuoteFormP
           {/* Preferred Date */}
           <div>
             <label htmlFor="preferredDate" className="block text-[11px] sm:text-xs font-semibold text-brand-slate uppercase tracking-wider mb-1.5">
-              Preferred Date (Optional)
+              Preferred Date
             </label>
             <input
               type="date"
@@ -260,7 +259,7 @@ export default function QuoteForm({ initialService = "", onSuccess }: QuoteFormP
           {/* Job Specifications */}
           <div>
             <label htmlFor="message" className="block text-[11px] sm:text-xs font-semibold text-brand-slate uppercase tracking-wider mb-1.5">
-              Job Specifications & Details
+              Tell us how we can help
             </label>
             <textarea
               id="message"
@@ -268,7 +267,7 @@ export default function QuoteForm({ initialService = "", onSuccess }: QuoteFormP
               rows={3}
               value={formData.message}
               onChange={handleChange}
-              placeholder="Describe your heating, gas, or plumbing requirements..."
+              placeholder="Tell us a little bit about what you need..."
               className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-brand-deepNavy placeholder-slate-400 text-base sm:text-sm focus:border-brand-copper focus:ring-1 focus:ring-brand-copper focus:outline-none"
             />
           </div>
@@ -277,7 +276,7 @@ export default function QuoteForm({ initialService = "", onSuccess }: QuoteFormP
           <div className="p-3 rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-between text-xs text-brand-slate">
             <span className="flex items-center gap-2">
               <Upload className="w-4 h-4 text-brand-copper flex-shrink-0" />
-              <span>Attach Photos / Plans (Optional)</span>
+              <span>Attach Photos (Optional)</span>
             </span>
             <span className="text-[10px] text-slate-400 font-mono">Max 10MB</span>
           </div>
@@ -301,7 +300,7 @@ export default function QuoteForm({ initialService = "", onSuccess }: QuoteFormP
               className="mt-0.5 rounded border-slate-300 text-brand-copper focus:ring-brand-copper w-4 h-4 flex-shrink-0"
             />
             <label htmlFor="consent" className="leading-snug">
-              Your information is used strictly to respond to your enquiry. By submitting, you agree to our{" "}
+              We only use your details to respond to your enquiry. Read our{" "}
               <Link href="/privacy-policy" className="text-brand-copper font-semibold underline hover:text-brand-deepNavy">
                 Privacy Policy
               </Link>.
@@ -319,14 +318,14 @@ export default function QuoteForm({ initialService = "", onSuccess }: QuoteFormP
             ) : (
               <>
                 <Send className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
-                <span>REQUEST A QUOTE</span>
+                <span>Get a Free Quote</span>
               </>
             )}
           </button>
 
           <div className="flex items-center justify-center gap-1.5 text-[10px] sm:text-[11px] text-slate-400 font-mono pt-1">
             <Lock className="w-3 h-3 text-slate-400 flex-shrink-0" />
-            <span>256-BIT ENCRYPTED & SECURE SPAM PROTECTION</span>
+            <span>Secure & Safe Submission</span>
           </div>
         </form>
       )}

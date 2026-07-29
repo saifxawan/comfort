@@ -1,22 +1,15 @@
 "use client";
 
 import React from "react";
-import dynamic from "next/dynamic";
+import Image from "next/image";
 import { CheckCircle2, Shield, Sparkles } from "lucide-react";
-import { siteConfig } from "@/config/site";
-
-// Dynamic import for 3D Building Cross Section with responsive fallback
-const BuildingCrossSection3D = dynamic(
-  () => import("./3d/BuildingCrossSection3D"),
-  { ssr: false }
-);
 
 export default function About() {
   const highlights = [
-    "Certified British Engineering Standards",
-    "Comprehensive Domestic & Commercial Coverage",
-    "Transparent Pricing & Upfront Quotations",
-    "End-to-End Heating, Gas & Hydro Integration",
+    "Domestic & Commercial Services",
+    "Quality Local Workmanship",
+    "Honest Upfront Pricing",
+    "Reliable Heating & Plumbing",
   ];
 
   return (
@@ -28,19 +21,15 @@ export default function About() {
           <div className="lg:col-span-6 space-y-5 sm:space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-brand-ivory border border-slate-200 text-brand-copper text-[11px] sm:text-xs font-mono tracking-wider uppercase font-semibold">
               <Sparkles className="w-3.5 h-3.5 flex-shrink-0" />
-              <span>WHO WE ARE</span>
+              <span>About Us</span>
             </div>
 
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brand-deepNavy font-display leading-tight break-words-safe">
-              COMFORT YOU CAN <span className="text-brand-copper">RELY ON.</span>
+              Reliable Local <span className="text-brand-copper">Heating & Plumbing</span>
             </h2>
 
             <p className="text-sm sm:text-base lg:text-lg text-brand-slate leading-relaxed font-normal">
-              At <strong className="text-brand-deepNavy font-semibold">{siteConfig.legalName}</strong>, we provide dependable heating, gas and plumbing solutions designed around the needs of modern homes and businesses.
-            </p>
-
-            <p className="text-xs sm:text-sm lg:text-base text-brand-slate leading-relaxed">
-              From high-efficiency heating systems and hot water installations to urgent plumbing repairs and commercial maintenance, our focus is simple: professional workmanship, reliable service and solutions engineered to deliver lasting comfort.
+              We help homeowners and businesses with heating, plumbing and gas services across the local area. Whether it&apos;s a new boiler, a leaking pipe or a complete heating installation, we&apos;re here to get the job done properly.
             </p>
 
             {/* Responsive Bullet Cards Grid */}
@@ -60,18 +49,35 @@ export default function About() {
                   <Shield className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-brand-deepNavy font-display uppercase tracking-wider">UNCOMPROMISING PRECISION</h4>
+                  <h4 className="text-xs sm:text-sm font-bold text-brand-deepNavy font-display uppercase tracking-wider">Quality Guaranteed</h4>
                   <p className="text-xs text-brand-slate mt-1 leading-relaxed">
-                    Every installation is executed with technical accuracy, safety compliance, and long-term durability in mind.
+                    Every job is carried out safely, cleanly and professionally to keep your home warm and running smoothly.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right Column: 3D Interactive Building Preview */}
+          {/* Right Column: High Quality Image Frame */}
           <div className="lg:col-span-6 mt-6 lg:mt-0">
-            <BuildingCrossSection3D />
+            <div className="relative rounded-2xl overflow-hidden border border-slate-200 bg-white p-2.5 sm:p-3 shadow-elevated">
+              <div className="relative h-[280px] sm:h-[380px] lg:h-[440px] w-full rounded-xl overflow-hidden bg-slate-100">
+                <Image
+                  src="/modern_boiler_installation.png"
+                  alt="Quality Boiler Installation"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 600px"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-deepNavy/40 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-lg border border-slate-200 shadow-md">
+                  <div className="text-[10px] sm:text-xs font-mono font-bold text-brand-copper uppercase">LOCAL EXPERTISE</div>
+                  <div className="text-[11px] sm:text-xs text-brand-deepNavy font-medium mt-0.5 leading-snug">
+                    Professional boiler installations, heating repairs and plumbing for your peace of mind
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

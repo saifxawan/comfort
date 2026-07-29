@@ -19,13 +19,13 @@ export default function ContactSection({ initialService }: ContactSectionProps) 
           <div className="lg:col-span-5 space-y-5 sm:space-y-6">
             <div>
               <span className="text-xs font-mono tracking-widest text-brand-copper uppercase px-3.5 py-1.5 rounded-full bg-brand-ivory border border-slate-200 font-semibold shadow-xs">
-                DIRECT COMMUNICATION
+                Contact Us
               </span>
               <h2 className="text-2xl sm:text-4xl font-extrabold text-brand-deepNavy mt-4 font-display leading-tight break-words-safe">
-                LET&apos;S GET YOUR <span className="text-brand-copper">PROJECT MOVING.</span>
+                Need Help?
               </h2>
               <p className="text-xs sm:text-base text-brand-slate mt-3 leading-relaxed">
-                Whether you need heating, plumbing, gas or installation support, our team is ready to discuss your requirements.
+                Contact us today for a free quotation or friendly advice.
               </p>
             </div>
 
@@ -41,7 +41,7 @@ export default function ContactSection({ initialService }: ContactSectionProps) 
                     <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div className="min-w-0">
-                    <div className="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">CALL OUR TEAM DIRECTLY</div>
+                    <div className="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">Call Now</div>
                     <div className="text-sm sm:text-base font-bold text-brand-deepNavy font-display group-hover:text-brand-copper transition-colors truncate">
                       {siteConfig.phone.display}
                     </div>
@@ -59,7 +59,7 @@ export default function ContactSection({ initialService }: ContactSectionProps) 
                     <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div className="min-w-0">
-                    <div className="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">EMAIL ENQUIRIES</div>
+                    <div className="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">Email Us</div>
                     <div className="text-xs sm:text-sm font-bold text-brand-deepNavy font-display group-hover:text-brand-copper transition-colors truncate">
                       {siteConfig.email}
                     </div>
@@ -79,7 +79,7 @@ export default function ContactSection({ initialService }: ContactSectionProps) 
                     <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div className="min-w-0">
-                    <div className="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">WHATSAPP CHAT</div>
+                    <div className="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">WhatsApp Us</div>
                     <div className="text-xs sm:text-sm font-bold text-emerald-800 font-display group-hover:text-emerald-700 transition-colors truncate">
                       {siteConfig.whatsapp.display}
                     </div>
@@ -93,7 +93,7 @@ export default function ContactSection({ initialService }: ContactSectionProps) 
                   <Clock className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div>
-                  <div className="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">BUSINESS HOURS</div>
+                  <div className="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">Opening Hours</div>
                   <div className="text-xs text-brand-deepNavy mt-1 font-semibold">{siteConfig.openingHours.days}: {siteConfig.openingHours.hours}</div>
                   <div className="text-xs text-brand-copper font-semibold mt-0.5">{siteConfig.openingHours.emergency}</div>
                 </div>
@@ -105,7 +105,7 @@ export default function ContactSection({ initialService }: ContactSectionProps) 
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div>
-                  <div className="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">PRIMARY SERVICE REGION</div>
+                  <div className="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">Area Covered</div>
                   <div className="text-xs text-brand-deepNavy mt-1 font-bold">{siteConfig.address.display}</div>
                   <div className="flex flex-wrap gap-1.5 mt-2.5">
                     {siteConfig.serviceAreas.map((area, i) => (

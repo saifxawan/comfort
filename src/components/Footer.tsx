@@ -25,7 +25,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-md">
-              Comfort Heating and Plumbing Ltd delivers premier British heating, gas and plumbing engineering. Built on technical accuracy, safety compliance, and enduring customer relationships across Greater London and Home Counties.
+              Professional heating, plumbing and gas services for homes and businesses.
             </p>
 
             <div className="flex items-center gap-3 pt-1">

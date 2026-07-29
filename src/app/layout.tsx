@@ -18,24 +18,24 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Comfort Heating and Plumbing Ltd | UK Heating & Gas Engineers",
+  title: "Comfort Heating and Plumbing Ltd | Heating, Plumbing & Gas Services You Can Trust",
   description:
-    "Premier UK heating, gas and plumbing engineering services for domestic and commercial clients across Greater London & Home Counties. Certified workmanship, boiler installations, and 24/7 support.",
+    "Reliable heating, plumbing and gas services for homes and businesses. Quality workmanship, honest advice and friendly local service.",
   keywords: [
     "Comfort Heating and Plumbing Ltd",
-    "Heating Engineer UK",
-    "Gas Safe Engineer London",
-    "Plumbing Services London",
-    "Boiler Replacement UK",
-    "Commercial Gas Services",
-    "Underfloor Heating Installation",
+    "Heating Services",
+    "Plumbing Services",
+    "Gas Services",
+    "Boiler Installation",
+    "Boiler Repairs",
+    "Underfloor Heating",
   ],
   authors: [{ name: "Comfort Heating and Plumbing Ltd" }],
   metadataBase: new URL("https://www.comfortheatingandplumbing.co.uk"),
   openGraph: {
-    title: "Comfort Heating and Plumbing Ltd | Engineered for Comfort. Built for Life.",
+    title: "Comfort Heating and Plumbing Ltd | Heating, Plumbing & Gas Services You Can Trust",
     description:
-      "High-end British heating, gas and plumbing solutions for modern homes and commercial buildings.",
+      "Reliable heating, plumbing and gas services for homes and businesses. Quality workmanship, honest advice and friendly local service.",
     url: "https://www.comfortheatingandplumbing.co.uk",
     siteName: "Comfort Heating and Plumbing Ltd",
     images: [
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Comfort Heating and Plumbing Ltd",
-    description: "Engineered for Comfort. Built for Life.",
+    description: "Heating, Plumbing & Gas Services You Can Trust",
     images: ["/company_logo.png"],
   },
   icons: {

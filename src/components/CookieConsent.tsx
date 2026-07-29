@@ -60,7 +60,7 @@ export default function CookieConsent() {
             <div>
               <h4 className="text-xs sm:text-sm font-bold text-brand-deepNavy font-display">Cookie & Privacy Settings</h4>
               <p className="text-[11px] sm:text-xs text-brand-slate mt-0.5 max-w-2xl leading-relaxed">
-                We use cookies to ensure technical security, optimize website performance, and analyze traffic. Review our{" "}
+                We use cookies to help our website work properly and improve your browsing experience. Read our{" "}
                 <Link href="/privacy-policy" className="text-brand-copper font-semibold underline hover:text-brand-deepNavy">
                   Privacy Policy
                 </Link>{" "}
@@ -83,7 +83,7 @@ export default function CookieConsent() {
               onClick={rejectNonEssential}
               className="px-3.5 py-2.5 rounded-lg text-xs font-semibold text-brand-slate bg-slate-100 border border-slate-200 hover:text-brand-deepNavy transition-colors flex-1 md:flex-initial text-center min-h-[44px]"
             >
-              Reject Non-Essential
+              Reject Optional
             </button>
             <button
               onClick={acceptAll}
@@ -109,15 +109,15 @@ export default function CookieConsent() {
 
             <div className="flex items-center gap-3 mb-6 pr-8">
               <Shield className="w-6 h-6 text-brand-copper flex-shrink-0" />
-              <h3 className="text-lg sm:text-xl font-bold text-brand-deepNavy font-display">Cookie Preference Center</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-brand-deepNavy font-display">Cookie Preferences</h3>
             </div>
 
             <div className="space-y-4 mb-6 sm:mb-8">
               {/* Necessary */}
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start justify-between gap-3">
                 <div>
-                  <div className="text-xs sm:text-sm font-bold text-brand-deepNavy font-display">Strictly Necessary Cookies</div>
-                  <div className="text-[11px] sm:text-xs text-brand-slate mt-0.5">Required for technical site navigation, security headers, and CSRF protection.</div>
+                  <div className="text-xs sm:text-sm font-bold text-brand-deepNavy font-display">Essential Cookies</div>
+                  <div className="text-[11px] sm:text-xs text-brand-slate mt-0.5">Required for the website to function properly and securely.</div>
                 </div>
                 <span className="text-[10px] font-mono text-emerald-800 bg-emerald-50 px-2 py-1 rounded border border-emerald-200 font-semibold flex-shrink-0">
                   ALWAYS ACTIVE
@@ -127,8 +127,8 @@ export default function CookieConsent() {
               {/* Analytics */}
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between gap-3">
                 <div>
-                  <div className="text-xs sm:text-sm font-bold text-brand-deepNavy font-display">Performance & Analytics</div>
-                  <div className="text-[11px] sm:text-xs text-brand-slate mt-0.5">Helps us measure site traffic and optimize WebGL 3D rendering speeds.</div>
+                  <div className="text-xs sm:text-sm font-bold text-brand-deepNavy font-display">Analytics Cookies</div>
+                  <div className="text-[11px] sm:text-xs text-brand-slate mt-0.5">Helps us understand how visitors use our website.</div>
                 </div>
                 <input
                   type="checkbox"
@@ -141,8 +141,8 @@ export default function CookieConsent() {
               {/* Marketing */}
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between gap-3">
                 <div>
-                  <div className="text-xs sm:text-sm font-bold text-brand-deepNavy font-display">Marketing & Target Cookies</div>
-                  <div className="text-[11px] sm:text-xs text-brand-slate mt-0.5">Used for targeted communication and campaign measurement.</div>
+                  <div className="text-xs sm:text-sm font-bold text-brand-deepNavy font-display">Marketing Cookies</div>
+                  <div className="text-[11px] sm:text-xs text-brand-slate mt-0.5">Used to help us reach customers interested in our services.</div>
                 </div>
                 <input
                   type="checkbox"

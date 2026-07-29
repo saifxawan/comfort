@@ -6,32 +6,32 @@ import Image from "next/image";
 export default function ProjectsGallery() {
   const projects = [
     {
-      title: "Kensington Luxury Residence",
-      category: "HYDRONIC UNDERFLOOR & HEATING",
+      title: "New Boiler Installation",
+      category: "BOILER INSTALLATION",
       image: "/hero_uk_heating_interior.png",
-      location: "Kensington, London",
-      desc: "Complete building services overhaul featuring concealed thermostatic valves and hydronic underfloor heating.",
+      location: "London",
+      desc: "Energy-efficient boiler installation completed cleanly and safely for a local home.",
     },
     {
-      title: "Mayfair Plant Room Commissioning",
-      category: "BOILER & GAS ENGINEERING",
+      title: "Boiler Repair & Servicing",
+      category: "BOILER REPAIR",
       image: "/modern_boiler_installation.png",
-      location: "Mayfair, London",
-      desc: "A-rated commercial gas safety testing, high-efficiency boiler manifold, and acoustic isolation.",
+      location: "London",
+      desc: "Fast heating repair to get a local business back up and running.",
     },
     {
-      title: "Surrey Residential Build",
-      category: "UNDERFLOOR HEATING PIPING",
+      title: "Underfloor Heating Setup",
+      category: "UNDERFLOOR HEATING",
       image: "/underfloor_heating_installation.png",
-      location: "Surrey, UK",
-      desc: "Precision multi-zone underfloor heating pipe laying across 4,500 sq ft residential development.",
+      location: "Surrey",
+      desc: "Modern underfloor heating system installed for comfortable, even home warmth.",
     },
     {
-      title: "Chelsea Townhouse Wet Room",
-      category: "BESPOKE ARCHITECTURAL PLUMBING",
+      title: "Bathroom Plumbing Upgrade",
+      category: "BATHROOM PLUMBING",
       image: "/luxury_bathroom_plumbing.png",
-      location: "Chelsea, London",
-      desc: "Luxury linear strip drainage, concealed thermostatic brassware, and unvented cylinder installation.",
+      location: "London",
+      desc: "Complete plumbing installation for a new bathroom suite and shower.",
     },
   ];
 
@@ -42,13 +42,13 @@ export default function ProjectsGallery() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <span className="text-xs font-mono tracking-widest text-brand-copper uppercase px-3.5 py-1.5 rounded-full bg-brand-ivory border border-slate-200 font-semibold shadow-xs">
-            PORTFOLIO OF EXCELLENCE
+            Recent Work
           </span>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brand-deepNavy mt-4 font-display break-words-safe">
-            RECENT ENGINEERING <span className="text-brand-copper">PROJECTS</span>
+            Recent <span className="text-brand-copper">Projects</span>
           </h2>
           <p className="text-xs sm:text-base lg:text-lg text-brand-slate mt-4">
-            Examine our recently completed UK residential and commercial building services projects.
+            A few examples of heating, plumbing and gas work we have completed for local customers.
           </p>
         </div>
 

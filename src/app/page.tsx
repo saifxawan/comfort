@@ -6,11 +6,11 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import About from "@/components/About";
 import Services from "@/components/Services";
-import Engineering3DSection from "@/components/Engineering3DSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ProcessTimeline from "@/components/ProcessTimeline";
 import ProjectsGallery from "@/components/ProjectsGallery";
 import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
@@ -27,28 +27,25 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-brand-warmWhite text-brand-deepNavy selection:bg-brand-copper selection:text-white">
-      {/* 1. Sticky Corporate Navigation Bar */}
+      {/* 1. Sticky Navigation Bar */}
       <Navbar onOpenQuoteModal={() => handleOpenQuoteModal()} />
 
-      {/* 2. Full-Width Editorial Hero */}
+      {/* 2. Hero Section */}
       <Hero onOpenQuoteModal={() => handleOpenQuoteModal()} />
 
-      {/* 3. Corporate Trust Bar */}
+      {/* 3. Trust Bar */}
       <TrustBar />
 
       {/* 4. About Us Section */}
       <About />
 
-      {/* 5. Editorial Services Section */}
+      {/* 5. Services Section */}
       <Services onOpenQuoteModal={(name) => handleOpenQuoteModal(name)} />
 
-      {/* 6. Interactive 3D Building Services Cutaway Experience */}
-      <Engineering3DSection />
-
-      {/* 7. Why Choose Us (Precision. Reliability. Professionalism.) */}
+      {/* 6. Why Choose Us */}
       <WhyChooseUs />
 
-      {/* 8. Our Process (6-Step Workflow Timeline) */}
+      {/* 8. Our Process */}
       <ProcessTimeline />
 
       {/* 9. Portfolio of Recent Projects */}
@@ -57,10 +54,13 @@ export default function Home() {
       {/* 10. Customer Testimonials */}
       <Testimonials />
 
-      {/* 11. Contact & Fast Quote Section */}
+      {/* 11. Frequently Asked Questions */}
+      <FAQ />
+
+      {/* 12. Contact & Quote Section */}
       <ContactSection initialService={modalService} />
 
-      {/* 12. Corporate Deep Navy Footer */}
+      {/* 13. Footer */}
       <Footer />
 
       {/* Global Quote Request Modal Overlay */}

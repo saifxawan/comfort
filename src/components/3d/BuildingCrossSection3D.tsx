@@ -141,18 +141,18 @@ export default function BuildingCrossSection3D() {
   }, []);
 
   const steps: { num: EngineeringStep; title: string; subtitle: string; color: string }[] = [
-    { num: 1, title: "01 — HEATING", subtitle: "Warm copper thermal circulation activates across floors and radiators.", color: "text-brand-copper" },
-    { num: 2, title: "02 — HOT WATER", subtitle: "Unvented thermal cylinder delivers continuous mains-pressure hot water.", color: "text-amber-600" },
-    { num: 3, title: "03 — PLUMBING", subtitle: "Mains water distribution routes highlight with acoustic leak isolation.", color: "text-brand-blueAccent" },
-    { num: 4, title: "04 — TOTAL COMFORT", subtitle: "Complete building-services system operates in total thermal harmony.", color: "text-emerald-700" },
+    { num: 1, title: "01 — HEATING", subtitle: "Warm water circulates through your radiators and heating systems.", color: "text-brand-copper" },
+    { num: 2, title: "02 — HOT WATER", subtitle: "Reliable hot water delivered straight to your taps and showers.", color: "text-amber-600" },
+    { num: 3, title: "03 — PLUMBING", subtitle: "Clean water supply distributed safely through your property.", color: "text-brand-blueAccent" },
+    { num: 4, title: "04 — COMPLETE SYSTEM", subtitle: "Heating and plumbing working together smoothly.", color: "text-emerald-700" },
   ];
 
   if (reducedMotion) {
     return (
       <div className="w-full rounded-2xl bg-white border border-slate-200 p-6 sm:p-8 text-center shadow-md">
-        <h4 className="text-base sm:text-lg font-bold text-brand-deepNavy mb-2 font-display">Integrated Building Services Visualisation</h4>
+        <h4 className="text-base sm:text-lg font-bold text-brand-deepNavy mb-2 font-display">Interactive Building System Demo</h4>
         <p className="text-xs sm:text-sm text-brand-slate max-w-md mx-auto">
-          Interactive 3D cutaway showcasing real heating circuits, hot water cylinder distribution, and hydro plumbing routes.
+          3D cutaway showing heating, hot water cylinder distribution, and plumbing routes.
         </p>
       </div>
     );
@@ -207,7 +207,7 @@ export default function BuildingCrossSection3D() {
             <div className="absolute bottom-3 left-3 right-3 z-10 flex flex-wrap items-center justify-between gap-1.5 text-[10px] sm:text-xs text-brand-slate bg-white/95 backdrop-blur-md px-3 py-2 rounded-md border border-slate-200 shadow-xs font-medium">
               <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-brand-copper" /> Heating</span>
               <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-amber-600" /> Hot Water</span>
-              <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-brand-blueAccent" /> Hydro</span>
+              <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-brand-blueAccent" /> Plumbing</span>
             </div>
           </div>
         </div>

@@ -47,13 +47,13 @@ export default function Services({ onOpenQuoteModal }: ServicesProps) {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <span className="text-xs font-mono tracking-widest text-brand-copper uppercase px-3.5 py-1.5 rounded-full bg-brand-ivory border border-slate-200 font-semibold shadow-xs">
-            SOLUTIONS DESIGNED FOR MODERN LIVING
+            What We Do
           </span>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brand-deepNavy mt-4 font-display break-words-safe">
-            EDITORIAL SERVICE <span className="text-brand-copper">CAPABILITIES</span>
+            Heating, Plumbing & <span className="text-brand-copper">Gas Services</span>
           </h2>
           <p className="text-xs sm:text-base lg:text-lg text-brand-slate mt-4">
-            High-specification heating, gas, and plumbing engineering presented through real UK architectural project installations.
+            Reliable heating, plumbing and gas solutions for homes and businesses across the local area.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export default function Services({ onOpenQuoteModal }: ServicesProps) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-deepNavy/60 via-transparent to-transparent" />
                 <span className="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-brand-deepNavy text-[10px] font-mono font-bold px-2.5 py-1 rounded border border-slate-200 uppercase tracking-widest">
-                  CERTIFIED
+                  Professional
                 </span>
               </div>
 
@@ -92,7 +92,7 @@ export default function Services({ onOpenQuoteModal }: ServicesProps) {
                 </div>
 
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-copper group-hover:text-brand-copperDark min-h-[44px]">
-                  <span>EXPLORE SERVICE</span>
+                  <span>Learn More</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default function Services({ onOpenQuoteModal }: ServicesProps) {
             </button>
 
             <div className="mb-4 pr-8">
-              <span className="text-xs font-mono text-brand-copper font-bold uppercase tracking-widest">SERVICE SPECIFICATIONS</span>
+              <span className="text-xs font-mono text-brand-copper font-bold uppercase tracking-widest">Service Overview</span>
               <h3 className="text-xl sm:text-2xl font-bold text-brand-deepNavy font-display mt-1">{selectedService.title}</h3>
             </div>
 
@@ -123,7 +123,7 @@ export default function Services({ onOpenQuoteModal }: ServicesProps) {
             </p>
 
             <div className="space-y-2 mb-6 sm:mb-8">
-              <h4 className="text-xs font-mono text-slate-500 uppercase tracking-wider mb-3">KEY TECHNICAL SPECIFICATIONS:</h4>
+              <h4 className="text-xs font-mono text-slate-500 uppercase tracking-wider mb-3">Key Features:</h4>
               {selectedService.features.map((feature, i) => (
                 <div key={i} className="flex items-center gap-2.5 p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-xs text-brand-deepNavy font-semibold">
                   <CheckCircle2 className="w-4 h-4 text-brand-copper flex-shrink-0" />
@@ -141,7 +141,7 @@ export default function Services({ onOpenQuoteModal }: ServicesProps) {
                 }}
                 className="w-full sm:w-auto px-6 py-3.5 rounded-lg text-xs font-bold uppercase tracking-wider text-white bg-brand-copper hover:bg-brand-copperDark shadow-md flex items-center justify-center gap-2 min-h-[48px]"
               >
-                <span>REQUEST QUOTE FOR THIS SERVICE</span>
+                <span>Get a Free Quote</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 

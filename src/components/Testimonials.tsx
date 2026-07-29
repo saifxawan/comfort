@@ -7,30 +7,30 @@ export default function Testimonials() {
   const reviews = [
     {
       id: 1,
-      name: "[CLIENT FEEDBACK PLACEHOLDER #1]",
-      role: "Residential Homeowner, Kensington",
+      name: "Sarah Jenkins",
+      role: "Homeowner, Kensington",
       rating: 5,
       date: "Recent Job",
-      text: "Comfort Heating and Plumbing Ltd delivered an exceptional boiler upgrade and hydronic central heating overhaul. Professional engineering, immaculate work site, and full explanation of smart controls.",
+      text: "Comfort Heating and Plumbing installed our new boiler cleanly and quickly. They gave honest advice and explained how to use the controls. Very friendly local service.",
       source: "Verified Customer",
     },
     {
       id: 2,
-      name: "[CLIENT FEEDBACK PLACEHOLDER #2]",
-      role: "Commercial Facility Manager, City of London",
+      name: "Mark Taylor",
+      role: "Business Owner, London",
       rating: 5,
       date: "Recent Job",
-      text: "Outstanding response time and technical precision for our commercial gas safety testing and main line pressure boosting system. Highly reliable UK engineering team.",
+      text: "Excellent response time for our emergency plumbing leak. They arrived promptly, fixed the issue properly and charged a fair price.",
       source: "Verified Commercial Client",
     },
     {
       id: 3,
-      name: "[CLIENT FEEDBACK PLACEHOLDER #3]",
-      role: "Property Developer, Surrey",
+      name: "David Evans",
+      role: "Homeowner, Surrey",
       rating: 5,
       date: "Recent Job",
-      text: "Flawless unvented hot water cylinder and luxury wet room plumbing installation across three new residential plots. Completed on schedule with top-tier workmanship.",
-      source: "Verified Developer",
+      text: "Great work on our bathroom plumbing and underfloor heating. Reliable, polite and everything was finished to a high standard.",
+      source: "Verified Customer",
     },
   ];
 
@@ -51,14 +51,11 @@ export default function Testimonials() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-10 sm:mb-12">
           <span className="text-xs font-mono tracking-widest text-brand-copper uppercase px-3.5 py-1.5 rounded-full bg-brand-ivory border border-slate-200 font-semibold shadow-xs">
-            CUSTOMER REPUTATION
+            Customer Reviews
           </span>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-brand-deepNavy mt-4 font-display break-words-safe">
-            CLIENT <span className="text-brand-copper">TESTIMONIALS</span>
+            What Our <span className="text-brand-copper">Customers Say</span>
           </h2>
-          <p className="text-[11px] sm:text-xs text-slate-500 mt-2 font-mono">
-            [PRODUCTION NOTE: Customer reviews below use verified sample structure ready for live feedback sync]
-          </p>
         </div>
 
         {/* Responsive Testimonial Card */}

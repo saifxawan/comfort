@@ -47,7 +47,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
       }
 
       // Active section scroll detection
-      const sections = ["home", "about", "services", "engineering-3d", "why-us", "process", "projects", "contact"];
+      const sections = ["home", "about", "services", "why-us", "process", "faq", "contact"];
       const scrollPos = window.scrollY + 200;
 
       for (const section of sections) {
@@ -71,10 +71,9 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
     { name: "Home", href: "#home", id: "home" },
     { name: "About", href: "#about", id: "about" },
     { name: "Services", href: "#services", id: "services" },
-    { name: "3D Engineering", href: "#engineering-3d", id: "engineering-3d" },
     { name: "Why Us", href: "#why-us", id: "why-us" },
     { name: "Our Process", href: "#process", id: "process" },
-    { name: "Projects", href: "#projects", id: "projects" },
+    { name: "FAQ", href: "#faq", id: "faq" },
     { name: "Contact", href: "#contact", id: "contact" },
   ];
 
@@ -131,7 +130,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
             className="flex items-center gap-2 text-xs font-semibold text-brand-deepNavy hover:text-brand-copper transition-colors px-3.5 py-2.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 min-h-[44px]"
           >
             <Phone className="w-3.5 h-3.5 text-brand-copper" />
-            <span className="hidden xl:inline">CALL US:</span>
+            <span className="hidden xl:inline">Call Us:</span>
             <span>{siteConfig.phone.display}</span>
           </a>
 
@@ -139,7 +138,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
             onClick={onOpenQuoteModal}
             className="px-4 xl:px-5 py-2.5 rounded-lg text-xs font-bold tracking-wider uppercase text-white bg-brand-copper hover:bg-brand-copperDark shadow-sm transition-all min-h-[44px]"
           >
-            GET A QUOTE
+            Get a Quote
           </button>
         </div>
 
@@ -188,7 +187,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
                   }}
                   className="w-full py-3.5 rounded-xl text-center text-sm font-bold tracking-wider uppercase text-white bg-brand-copper shadow-md min-h-[48px] flex items-center justify-center"
                 >
-                  GET A FREE QUOTE
+                  Get a Free Quote
                 </button>
 
                 <a
@@ -198,7 +197,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
                   onClick={() => setMobileMenuOpen(false)}
                   className="w-full py-3.5 rounded-xl text-center text-sm font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 flex items-center justify-center gap-2 min-h-[48px]"
                 >
-                  CHAT ON WHATSAPP
+                  WhatsApp Us
                 </a>
               </div>
             </nav>

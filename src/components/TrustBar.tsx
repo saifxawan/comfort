@@ -6,29 +6,29 @@ import { ShieldCheck, Clock, Building2, Flame, MapPin } from "lucide-react";
 export default function TrustBar() {
   const trustIndicators = [
     {
+      icon: <Flame className="w-5 h-5 text-brand-copper" />,
+      title: "Heating",
+      subtitle: "Boilers & Radiators",
+    },
+    {
       icon: <ShieldCheck className="w-5 h-5 text-brand-copper" />,
-      title: "Professional Workmanship",
-      subtitle: "Highest UK Standards",
+      title: "Plumbing",
+      subtitle: "Repairs & Installations",
     },
     {
       icon: <Clock className="w-5 h-5 text-brand-copper" />,
-      title: "Reliable Service",
-      subtitle: "Punctual & Transparent",
+      title: "Gas",
+      subtitle: "Safe Gas Services",
     },
     {
       icon: <Building2 className="w-5 h-5 text-brand-copper" />,
       title: "Domestic & Commercial",
-      subtitle: "Homes & Enterprises",
-    },
-    {
-      icon: <Flame className="w-5 h-5 text-brand-copper" />,
-      title: "Gas & Heating Expertise",
-      subtitle: "Qualified Specialists",
+      subtitle: "Homes & Businesses",
     },
     {
       icon: <MapPin className="w-5 h-5 text-brand-copper" />,
-      title: "Local UK Service",
-      subtitle: "Greater London & Home Counties",
+      title: "Reliable & Professional",
+      subtitle: "Friendly Local Service",
     },
   ];
 
